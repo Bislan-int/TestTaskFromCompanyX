@@ -1,6 +1,6 @@
 package com.example.testtaskfromcompanyx.domain.repository
 
-import androidx.lifecycle.LiveData
+//import androidx.lifecycle.LiveData
 import com.example.testtaskfromcompanyx.domain.entity.BrandItem
 import com.example.testtaskfromcompanyx.domain.entity.CategoryItem
 import com.example.testtaskfromcompanyx.domain.entity.FlashSaleItem

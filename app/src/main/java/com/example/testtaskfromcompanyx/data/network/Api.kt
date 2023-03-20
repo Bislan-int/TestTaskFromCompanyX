@@ -1,9 +1,7 @@
 package com.example.testtaskfromcompanyx.data.network
 
-import androidx.lifecycle.LiveData
 import com.example.testtaskfromcompanyx.data.network.model.FlashSaleResponse
 import com.example.testtaskfromcompanyx.data.network.model.LatestResponse
-import kotlinx.coroutines.flow.Flow
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET

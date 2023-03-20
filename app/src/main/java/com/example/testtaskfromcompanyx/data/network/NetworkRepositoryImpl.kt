@@ -1,11 +1,7 @@
 package com.example.testtaskfromcompanyx.data.network
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.Transformations
 import com.example.testtaskfromcompanyx.R
 import com.example.testtaskfromcompanyx.data.Mapper
-import com.example.testtaskfromcompanyx.data.network.model.LatestDto
-import com.example.testtaskfromcompanyx.data.network.model.LatestResponse
 import com.example.testtaskfromcompanyx.domain.entity.BrandItem
 import com.example.testtaskfromcompanyx.domain.entity.CategoryItem
 import com.example.testtaskfromcompanyx.domain.entity.FlashSaleItem
