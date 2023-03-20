@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF9FF"
+    tools:context=".presentation.fragment.SignInFragment">
+
+    <TextView
+        android:id="@+id/sign_in"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="121dp"
+        android:text="@string/sign_in"
+        android:textAppearance="@style/sign_in"
+        android:gravity="center_horizontal|top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_first_name"
+        android:layout_width="289dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/rectangle_2"
+        android:gravity="center"
+        android:hint="@string/first_name"
+        android:textAppearance="@style/input_fields"
+        app:layout_constraintEnd_toEndOf="@+id/sign_in"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/sign_in"
+        app:layout_constraintTop_toBottomOf="@+id/sign_in" />
+
+    <EditText
+        android:id="@+id/et_last_name"
+        android:layout_width="289dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/rectangle_2"
+        android:hint="@string/last_name"
+        android:gravity="center"
+        android:textAppearance="@style/input_fields"
+        app:layout_constraintEnd_toEndOf="@+id/sign_in"
+        app:layout_constraintStart_toStartOf="@+id/sign_in"
+        app:layout_constraintTop_toBottomOf="@+id/et_first_name"/>
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="289dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/rectangle_2"
+        android:hint="@string/email"
+        android:gravity="center"
+        android:textAppearance="@style/input_fields"
+        app:layout_constraintEnd_toEndOf="@+id/sign_in"
+        app:layout_constraintStart_toStartOf="@+id/sign_in"
+        app:layout_constraintTop_toBottomOf="@+id/et_last_name"/>
+
+    <TextView
+        android:id="@+id/bt_sign_in"
+        android:layout_width="289dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/button"
+        android:text="@string/sign_in"
+        android:gravity="center"
+        android:textAppearance="@style/button_sign_in"
+        app:layout_constraintEnd_toEndOf="@+id/et_email"
+        app:layout_constraintStart_toStartOf="@+id/et_email"
+        app:layout_constraintTop_toBottomOf="@+id/et_email"/>
+
+    <TextView
+        android:id="@+id/already_hav"
+        android:layout_width="129dp"
+        android:layout_height="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:gravity="top"
+        android:text="@string/already_hav"
+        android:textAppearance="@style/already_hav"
+        app:layout_constraintStart_toStartOf="@+id/bt_sign_in"
+        app:layout_constraintTop_toBottomOf="@+id/bt_sign_in" />
+
+    <TextView
+        android:id="@+id/text_button_log_in"
+        android:layout_width="35dp"
+        android:layout_height="16dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal|top"
+        android:text="@string/text_button_log_in"
+        android:textAppearance="@style/text_button_log_in"
+        app:layout_constraintStart_toEndOf="@+id/already_hav"
+        app:layout_constraintTop_toTopOf="@+id/already_hav" />
+
+    <ImageView
+        android:id="@+id/im_google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/already_hav"
+        app:srcCompat="@drawable/ic_google"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/sign_in_with_google"
+        android:layout_width="117dp"
+        android:layout_height="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:gravity="top"
+        android:text="@string/sign_in_with_google"
+        android:textAppearance="@style/sign_in_wit"
+        app:layout_constraintBottom_toBottomOf="@+id/im_google"
+        app:layout_constraintStart_toEndOf="@+id/im_google"
+        app:layout_constraintTop_toTopOf="@+id/im_google"/>
+
+    <ImageView
+        android:id="@+id/im_apple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="38dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/im_google"
+        app:srcCompat="@drawable/ic_apple" />
+
+    <TextView
+        android:id="@+id/sign_in_with_apple"
+        android:layout_width="117dp"
+        android:layout_height="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:gravity="top"
+        android:text="@string/sign_in_with_apple"
+        android:textAppearance="@style/sign_in_wit"
+        app:layout_constraintBottom_toBottomOf="@+id/im_apple"
+        app:layout_constraintStart_toEndOf="@+id/im_apple"
+        app:layout_constraintTop_toTopOf="@+id/im_apple" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

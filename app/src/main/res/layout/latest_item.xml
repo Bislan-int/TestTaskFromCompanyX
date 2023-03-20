@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="12dp">
+
+    <ImageView
+        android:id="@+id/image_latest_item"
+        android:layout_width="114dp"
+        android:layout_height="149dp"
+        app:srcCompat="@drawable/photo_latest"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/category_product_latest_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="46dp"
+        android:background="@drawable/rectangle_category"
+        android:gravity="center"
+        android:text="Phone"
+        android:textAppearance="@style/product_category_latest"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/name_product_latest_item"
+        android:layout_width="75dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="3dp"
+        android:lines="2"
+        android:ellipsize="end"
+        android:text="Samsung S10"
+        android:textAppearance="@style/product_name_latest"
+        app:layout_constraintStart_toStartOf="@+id/category_product_latest_item"
+        app:layout_constraintTop_toBottomOf="@+id/category_product_latest_item" />
+
+    <TextView
+        android:id="@+id/prise_product_latest_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="7dp"
+        android:text="$ 180,000"
+        android:textAppearance="@style/product_prise_latest"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/dt_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_bt_add" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
